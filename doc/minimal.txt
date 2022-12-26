@@ -1,0 +1,50 @@
+*minimal.txt* Minimal theme for vim. Period.
+
+
+                              Reference Manual~
+
+
+==============================================================================
+CONTENTS                                                    *minimal-contents*
+
+    1. Intro...................................................|minimal-intro|
+    2. Installation.....................................|minimal-installation|
+    3. Mappings.............................................|minimal-mappings|
+    4. License...............................................|minimal-license|
+
+==============================================================================
+1. Intro                                                       *minimal-intro*
+
+a brutal and straightforward minimalist theme ever. taking inspiration from
+all over the internet wonderland. i have beeing using this myself for like
+years now. no issue so far. if found any groups you need and not in it, you 
+can fork it and improve on it.
+
+Plugin under:
+
+    https://github.com/kenken17/minimal.vim
+
+==============================================================================
+2. Installation                                         *minimal-installation*
+
+Use any of your plugin managers should not be any issue. I am using vim-plug
+myself. So did not test on other. If there is issue on any other plugin
+managers, you can leave a message, I will try to look into it.
+
+>
+    Plug 'kenken17/minimal.vim'
+<
+
+==============================================================================
+3. Usage                                                       *minimal-usage*
+
+Nothing much is needed except using it on .vimrc:
+
+>
+    colorscheme minimal
+<
+
+==============================================================================
+4. License                                                   *minimal-license*
+
+MIT
