@@ -1,8 +1,8 @@
 # Intro
 
-a brutal and straightforward minimalist theme ever. taking inspiration from
-all over the internet wonderland. i have beeing using this myself for like
-years now. no issue so far. if found any groups you need and not in it, you
+a brutal and straightforward minimalist theme ever. Taking inspiration from
+all over the internet wonderland. I have beeing using this myself for like
+years now. No issue so far. If found any groups you need and not in it, you
 can fork it and improve on it.
 
 Theme under: [https://github.com/kenken17/minimal.vim](https://github.com/kenken17/minimal.vim)

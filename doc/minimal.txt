@@ -9,15 +9,15 @@ CONTENTS                                                    *minimal-contents*
 
     1. Intro...................................................|minimal-intro|
     2. Installation.....................................|minimal-installation|
-    3. Mappings.............................................|minimal-mappings|
+    3. Usage...................................................|minimal-usage|
     4. License...............................................|minimal-license|
 
 ==============================================================================
 1. Intro                                                       *minimal-intro*
 
-a brutal and straightforward minimalist theme ever. taking inspiration from
-all over the internet wonderland. i have beeing using this myself for like
-years now. no issue so far. if found any groups you need and not in it, you 
+a brutal and straightforward minimalist theme ever. Taking inspiration from
+all over the internet wonderland. I have beeing using this myself for like
+years now. No issue so far. If found any groups you need and not in it, you 
 can fork it and improve on it.
 
 Plugin under:
