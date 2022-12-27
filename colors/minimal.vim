@@ -11,7 +11,7 @@ if exists('syntax_on')
    syntax reset
 endif
 
-let g:colors_name = 'minimal'
+let g:colors_name = 'minimal-dev'
 
 let s:italic            = 'italic'
 let s:bold              = 'bold'
@@ -339,5 +339,17 @@ call s:hi("fugitiveHash", s:color_lvl_4, s:color_none)
 call s:hi("diffRemoved", s:color_error, s:color_none)
 call s:hi("diffAdded", s:color_highlight, s:color_none)
 call s:hi("diffChanged", s:color_lvl_4, s:color_none)
+
+" for airline inactive mode
+let g:airline_theme_patch_func = 'AirlineThemePatch'
+function! AirlineThemePatch(palette)
+    for colors in values(a:palette.inactive)
+        " The colors array has the following elements:
+        "   [guifg, guibg, ctermfg, ctermbg, opts]
+        " Using '' should get them back to the default values.
+        let colors[0] = '#c6c6c6'
+        let colors[2] = '251'
+    endfor
+endfunction
 
 " vim:set ft=vim sw=2 sts=2 et:
