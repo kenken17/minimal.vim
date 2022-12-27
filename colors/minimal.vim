@@ -11,7 +11,7 @@ if exists('syntax_on')
    syntax reset
 endif
 
-let g:colors_name = 'minimal-dev'
+let g:colors_name = 'minimal'
 
 let s:italic            = 'italic'
 let s:bold              = 'bold'
