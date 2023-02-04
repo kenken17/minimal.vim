@@ -8,7 +8,7 @@ set background=dark
 hi clear
 
 if exists('syntax_on')
-   syntax reset
+  syntax reset
 endif
 
 let g:colors_name = 'minimal'
@@ -41,29 +41,29 @@ let s:default_lst       = []
 let s:default_str       = ''
 
 function! s:hi(...)
-    let group = a:1
-    let fg    = get(a:, 2, s:default_fg)
-    let bg    = get(a:, 3, s:default_bg)
-    let attr  = get(a:, 4, s:default_str)
+  let group = a:1
+  let fg    = get(a:, 2, s:default_fg)
+  let bg    = get(a:, 3, s:default_bg)
+  let attr  = get(a:, 4, s:default_str)
 
-    let cmd = ['highlight', group]
+  let cmd = ['highlight', group]
 
-    if fg != s:default_lst
-        call add(cmd, 'guifg='.fg[0])
-        call add(cmd, 'ctermfg='.fg[1])
-    endif
+  if fg != s:default_lst
+    call add(cmd, 'guifg='.fg[0])
+    call add(cmd, 'ctermfg='.fg[1])
+  endif
 
-    if bg != s:default_lst
-        call add(cmd, 'guibg='.bg[0])
-        call add(cmd, 'ctermbg='.bg[1])
-    endif
+  if bg != s:default_lst
+    call add(cmd, 'guibg='.bg[0])
+    call add(cmd, 'ctermbg='.bg[1])
+  endif
 
-    if attr != s:default_str
-        call add(cmd, 'gui='.attr)
-        call add(cmd, 'cterm='.attr)
-    endif
+  if attr != s:default_str
+    call add(cmd, 'gui='.attr)
+    call add(cmd, 'cterm='.attr)
+  endif
 
-    exec join(cmd, ' ')
+  exec join(cmd, ' ')
 endfunction
 
 
@@ -269,6 +269,8 @@ call s:hi("javaParen2", s:color_lvl_1, s:color_none)
 
 " COC
 call s:hi("CocMenuSel", s:color_highlight, s:color_lvl_1)
+call s:hi("CocListSearch", s:color_highlight, s:color_none)
+call s:hi("CocListLine", s:color_lvl_0, s:color_selection)
 
 " Markdown
 call s:hi("htmlLink", s:color_lvl_3, s:color_none)
@@ -343,13 +345,13 @@ call s:hi("diffChanged", s:color_lvl_4, s:color_none)
 " for airline inactive mode
 let g:airline_theme_patch_func = 'AirlineThemePatch'
 function! AirlineThemePatch(palette)
-    for colors in values(a:palette.inactive)
-        " The colors array has the following elements:
-        "   [guifg, guibg, ctermfg, ctermbg, opts]
-        " Using '' should get them back to the default values.
-        let colors[0] = '#c6c6c6'
-        let colors[2] = '251'
-    endfor
+  for colors in values(a:palette.inactive)
+    " The colors array has the following elements:
+    "   [guifg, guibg, ctermfg, ctermbg, opts]
+    " Using '' should get them back to the default values.
+    let colors[0] = '#c6c6c6'
+    let colors[2] = '251'
+  endfor
 endfunction
 
 " vim:set ft=vim sw=2 sts=2 et:
